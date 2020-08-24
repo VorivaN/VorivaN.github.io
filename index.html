@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Здесь был Гендальф</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/characters.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/points.js"></script>
+        <script src="js/main.js"></script>
+        <link href="css/select2.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="map-log">
+            <span id="log-x">0.00</span>
+            <span id="log-y">0.00</span>
+            <span id="log-xy" style="display: none;"></span> 
+        </div>
+        
+        <div id="map"></div>
+        <div id="bottom-panel">
+            <div id="controls-wrapper">
+                <div id="slider-wrapper">
+                    <button id="toggle-time" onclick="toggle_time()">Запустить время</button>
+                    <span id="cur-date-label">Текущаяя дата: <span id="cur-date" class="date"></span></span>
+                    <div id="slider-range"></div>
+                </div>
+                <div id="event-log"></div>
+            </div>
+            <div id="buttons-wrapper">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Общее</a></li>
+                        <li><a href="#tabs-2">Пути</a></li>
+                        <li><a href="#tabs-3">Персонажи</a></li>
+                    </ul>
+                    <div id="slider-vertical"></div>
+                    <div id="tabs-1" class="gui-tab">
+                        <div class="tab-wrapper-inner">
+                            <input type="checkbox" id="show-paths-checkbox" checked>
+                            <label for="show-paths-checkbox">Показывать пути</label><br>
+                            <input type="checkbox" id="show-chars-checkbox" checked>
+                            <label for="show-chars-checkbox">Показывать персонажей</label><br>
+                            <input type="checkbox" id="show-locations-checkbox" checked>
+                            <label for="show-locations-checkbox">Показывать локации</label>
+                        </div>
+                    </div>
+                    <div id="tabs-2" class="gui-tab">
+                        <div class="tab-wrapper-inner"></div>
+                    </div>
+                    <div id="tabs-3" class="gui-tab">
+                        <div class="tab-wrapper-inner"></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </body>
+</html>

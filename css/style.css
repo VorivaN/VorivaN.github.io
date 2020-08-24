@@ -1,0 +1,156 @@
+@font-face{
+
+    font-family: 'Aniron';
+    src: url('../aniron.ttf');
+
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+label
+{
+    font-size: 13px;
+	font-family: Aniron;	
+}
+li
+{
+    font-size: 13px;
+	font-family: Aniron;	
+}
+button
+{
+    font-size: 1px;
+	font-family: Aniron;	
+}
+div
+{
+    font-size: 13px;
+	font-family: Aniron;	
+}
+.ymaps-2-1-77-b-cluster-tabs__menu-item-text
+{
+    font-size: 10px;
+	font-family: Aniron;	
+}
+.ymaps-2-1-77-b-cluster-tabs__item-header 
+{
+    font-size: 10px;
+	font-family: Aniron;	
+}
+.ymaps-2-1-77-b-cluster-content__body 
+{
+    font-size: 10px;
+	font-family: Aniron;	
+}
+.ymaps-2-1-77-placemark__content-inner > ymaps 
+{
+    font-size: 10px;
+    margin-top: -3px;
+	font-family: Aniron;	
+}
+.ymaps-2-1-77-balloon__content> ymaps > ymaps
+{
+    font-size: 10px;
+	font-family: Aniron;	
+}
+.ymaps-2-1-77-balloon__content> ymaps > ymaps > ymaps
+{
+    font-size: 10px;
+	font-family: Aniron;	
+}
+#map{
+    height: 75vh;
+    width: 100vw;
+}
+
+#slider-range {
+    width: 99%;
+    margin: 5px;
+}
+
+#map-log {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+#event-log {
+    height: 20vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#map-log > span {
+    display: block;
+    font-weight: 500;
+    font-size: 12;
+    color: grey;
+}
+
+#controls-wrapper {
+    width: 50vw;
+    height: 25vh;
+    background-color: whitesmoke;
+}
+
+#buttons-wrapper {
+    width: 50vw;
+    height: 25vh;
+    background-color: whitesmoke;
+    border-left: 1px solid black;
+}
+
+#slider-wrapper {
+    padding: .25em 1em 0 1em;
+}
+
+#toggle-time {
+    width: 18em;
+    font-size: 10px;
+}
+
+#bottom-panel {
+    display: flex;
+    overflow: hidden;
+}
+
+#tabs {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+#tabs > ul > li > a {
+    padding: .2em .1em;
+    font-size: 12pt;
+}
+
+.gui-tab {
+    overflow: hidden;
+}
+
+#slider-vertical {
+    position: absolute; 
+    height: auto; 
+    top: 42px; 
+    bottom: 9px; 
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.date {
+    color: DodgerBlue;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.tab-wrapper-inner > label {
+    font-size: 1em;
+}
