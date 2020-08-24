@@ -195,7 +195,7 @@ function new_time(date)
     
     dateObj = new Date(date);
     events.forEach(e => {
-        if (e.start < dateObj) {
+        if (e.start <= dateObj) {
             if (!$('.log[desc="' + e.event + '"]').length) {
                 $('#event-log').append(`<div class="log" desc="${e.event}"><span class="date">${e.start.getFullYear() +" " + months[e.start.getMonth()] + "-" + e.start.getDate()}</span>: ${e.event}</div>`);
                 var log_height = $($(".log").get(0)).height();
